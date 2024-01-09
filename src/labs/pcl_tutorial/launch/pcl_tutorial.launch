@@ -1,0 +1,10 @@
+<launch>
+
+  <!-- node to handle all service callbacks -->
+  <node pkg="pcl_tutorial"
+        name="pcl_tutorial_node"
+        type="pcl_tutorial_node"
+        output="screen"
+  />
+  
+</launch>

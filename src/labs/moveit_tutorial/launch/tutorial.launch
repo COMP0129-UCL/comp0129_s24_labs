@@ -1,0 +1,20 @@
+<launch>
+
+	<!-- load panda model and gazebo parameters -->
+	<include file="$(find panda_description)/launch/description.launch"/>
+
+	<!-- run the moveit tutorial node -->
+  <node pkg="moveit_tutorial"
+        name="moveit_tutorial_node"
+        type="moveit_tutorial_node"
+        output="screen"
+  />
+  
+  <!-- run the model spawning node to add a cube into the simulation -->
+  <node pkg="moveit_tutorial"
+  			name="moveit_spawn_node"
+  			type="spawn.py"
+  			output="screen"
+  />
+  
+</launch>

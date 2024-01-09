@@ -1,0 +1,10 @@
+<launch>
+
+  <!-- node to handle all service callbacks -->
+  <node pkg="obj_rec_tutorial"
+        name="obj_rec_tutorial_node"
+        type="obj_rec_tutorial_node"
+        output="screen"
+  />
+  
+</launch>
