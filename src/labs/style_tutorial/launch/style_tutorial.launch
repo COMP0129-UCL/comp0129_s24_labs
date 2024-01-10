@@ -1,0 +1,10 @@
+<launch>
+
+  <!-- node to handle all service callbacks -->
+  <node pkg="style_tutorial"
+        name="style_tutorial_node"
+        type="style_tutorial_node"
+        output="screen"
+  />
+  
+</launch>
